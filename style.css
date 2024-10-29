@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgba(10, 148, 148, 0.311);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+section {
+    overflow: hidden;
+    z-index: 11;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 315px 315px;
+    grid-template-rows: 215px 255px;
+    font-family: "Karla", sans-serif;
+}
+.first {
+    grid-column: 1/ span 2;
+    grid-row: 1;
+    padding: 40px;
+    background-color: white;
+}
+.second {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: #2bb3b1;
+    padding: 40px;
+    color: white;
+
+}
+.third {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: #4abebd;
+    padding: 40px;
+    color: white;
+
+}
+h1 {
+    color: #3caaab; 
+    font-size: 30px;
+    margin-bottom: 20px;
+    
+}
+span {
+    font-size: 20px;
+    color: #c9dc68;
+}
+h2 {
+    font-size: 16px;
+    font-weight: 400;
+    color: grey;
+    margin-top: 10px;
+    line-height: 25px;
+}
+h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.all {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+h6 {
+    font-size: 40px;
+    margin-right: 10px;
+}
+p {
+    color: rgba(255, 255, 255, 0.336);
+}
+h4 {
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+button {
+    width: 235px;
+    height: 45px;
+    background-color: #c9dc68;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    box-shadow: 4px 5px 8px gray;
+}
+h5 {
+    font-weight: 400;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.466);
+}
+@media screen  and (max-width: 450px) {
+    section {
+        display: grid;
+        grid-template-columns: 310px;
+        grid-template-rows: repeat(3, 265px);
+    
+    }
+    .first {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .second {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .third {
+        grid-row: 3;
+        grid-column: 1;
+    }
+}
